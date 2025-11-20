@@ -1,0 +1,12 @@
+<html>
+    <head></head>
+    <body>
+    {% for n in range(0,count) %}
+        {% if "title" in item %} 
+            {{ n }}. Hello, {{ item["title"] }} {{ item["name"] }}!
+        {% else %}
+            {{ n }}. Hi, {{ item["name"] }}!
+        {% endif %}
+    {% endfor %}
+    </body>
+</html>
