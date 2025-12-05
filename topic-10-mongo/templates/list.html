@@ -12,6 +12,7 @@
             <th>Kind</th>
             <th>Food</th>
             <th>Noise</th>
+            <th>Color</th>
             <th>Actions</th>
         </tr>
         {% for pet in pets %}
@@ -22,6 +23,7 @@
             <td>{{ pet['kind_name'] }}</td> <!-- kind_name -->
             <td>{{ pet['food'] }}</td> <!-- food -->
             <td>{{ pet['noise'] }}</td> <!-- noise -->
+            <td>{{ pet['color'] }}</td>
             <td>
                 <a href="/delete/{{ pet['id'] }}">Delete</a> |
                 <a href="/update/{{ pet['id'] }}">Update</a>
